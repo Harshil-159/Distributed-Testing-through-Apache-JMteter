@@ -3,7 +3,7 @@ Distributed Testing:
 
 ![Distributed Testing](https://github.com/user-attachments/assets/f2a6ebc5-1f4b-4350-be00-621050394038)
 
-Step 1:- 
+**Step 1:- **
 
 Need to add IP Addresses in jmeter.properties of Master Machine
 
@@ -265,13 +265,14 @@ So, **291,838 milliseconds** equals approximately **4.86 minutes**.
 Step 7:- In ExcelSheet Report
 
 (1)	In Timestamp Need to change this Format Cell in Custom Number like Below :- 
+
 -> dd-mm-yyyy hh:mm:ss 
 
 (2)	After that need to change the elapsed time milliSeconds to Seconds :- 
+
 -> Select the Elapsed time Seconds the Select Column and Value Like R2/1000 
 
 Step 8 :- 
-
 
 Example :-
 The command you provided uses Apache JMeter's non-GUI mode for distributed testing. Let me explain the components of your command and how they work, along with documentation to match your scenario:
