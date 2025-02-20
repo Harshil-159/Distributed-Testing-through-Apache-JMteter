@@ -3,7 +3,7 @@ Distributed Testing:
 
 ![Distributed Testing](https://github.com/user-attachments/assets/f2a6ebc5-1f4b-4350-be00-621050394038)
 
-**Step 1:- **
+**Step 1:-**
 
 Need to add IP Addresses in jmeter.properties of Master Machine
 
@@ -11,7 +11,7 @@ which located in C:\apache-jmeter-5.6.3\bin
 remote_hosts=192.168.1.74, 192.168.1.94
 
 
-Step 2 :- 
+**Step 2:-**
 
 Need to add 1099, 4445 and 60000 ports in a Inbound Rules 
 
@@ -90,7 +90,8 @@ Third-Party Security Software:
 Check for Organization-wide Network Policies:
   - If you're in a corporate environment, there might be network policies or hardware firewalls preventing access to certain ports.
   Check with your network administrator.
-Step 3: - 
+
+**Step 3:-** 
 
 Need to run this query on given path :-
 
@@ -125,7 +126,7 @@ Once Telnet Client is enabled, you can access it via the Command Prompt:
    telnet 192.168.1.1
 Now Telnet is ready to use from the command line after being enabled from the Control Panel.
 
-Step 4: - 
+**Step 4:-**
 
 If your JMeter test takes **15 minutes** on the **master machine alone**, but when you add **2 slave machines**, 
 the total time becomes **45 minutes**, this suggests there is an underlying issue with the distributed setup. Normally,
@@ -242,7 +243,9 @@ If the master is collecting a lot of detailed results from the slaves, try reduc
 By addressing these potential causes, you can reduce the test execution time and ensure that distributed testing works efficiently.
 
 
-Step 6:- In ExcelSheet Report
+**Step 6:-**
+
+**In ExcelSheet Report**
 
 To convert **291,838 milliseconds** into minutes, I followed these steps:
 
@@ -262,7 +265,9 @@ To convert **291,838 milliseconds** into minutes, I followed these steps:
 So, **291,838 milliseconds** equals approximately **4.86 minutes**.
 
 
-Step 7:- In ExcelSheet Report
+**Step 7:-**
+
+In ExcelSheet Report
 
 (1)	In Timestamp Need to change this Format Cell in Custom Number like Below :- 
 
@@ -272,7 +277,7 @@ Step 7:- In ExcelSheet Report
 
 -> Select the Elapsed time Seconds the Select Column and Value Like R2/1000 
 
-Step 8 :- 
+**Step 8 :-** 
 
 Example :-
 The command you provided uses Apache JMeter's non-GUI mode for distributed testing. Let me explain the components of your command and how they work, along with documentation to match your scenario:
