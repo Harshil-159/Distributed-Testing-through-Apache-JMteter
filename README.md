@@ -271,12 +271,6 @@ Step 7:- In ExcelSheet Report
 
 Step 8 :- 
 
-To upload these Documents  in a GIT 
-http://192.168.1.229/HarshilModi/performance-testing :- 
-  **Need to run this Queries :-** 
-1)	git add. 
-2)	git commit -m “comment”
-3)	git push origin develop 
 
 Example :-
 The command you provided uses Apache JMeter's non-GUI mode for distributed testing. Let me explain the components of your command and how they work, along with documentation to match your scenario:
