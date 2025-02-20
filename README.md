@@ -212,7 +212,8 @@ Each slave runs its own Java Virtual Machine (JVM). If the JVM on one or both sl
    - GC Delays:-
 If the slave machines are running into frequent GC pauses,
    they may take longer to process requests and report results back to the master.
-Step5: - 
+
+**Step5:-** 
 
 How to Troubleshoot the Issue:-
 
