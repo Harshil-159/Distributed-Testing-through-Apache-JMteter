@@ -218,6 +218,7 @@ How to Troubleshoot the Issue:-
 1. Check Network Performance:-
 
 Ensure the master and slaves are on a reliable network. Test the latency and bandwidth between the master and the slave machines.
+
  If there is high latency, consider moving the machines to the same network or closer to reduce delays.
 2. Monitor Resource Usage:-
 
@@ -292,31 +293,52 @@ Command Options Explained
  192.168.1.74
 
 How Distributed Testing Works :-
+
 Setup for Master-Slave Configuration :- 
+
 1.	JMeter Master Machine (Your Local Machine) :- 
+
 ○	This is where you run the command. It coordinates the test execution across the remote slave servers.
+
 2.	JMeter Slave Machine (Remote Server at 192.168.1.74):-
+
 ○	This machine(s) executes the test plan using the configurations from the master.
+
 Steps to Configure Distributed Testing :- 
 1.	Start Slave Servers on Remote Machines
+
 ●	On each slave machine, navigate to the JMeter bin directory and run:
  Jmeter-server
+
 ●	This will start the JMeter server mode, listening for instructions from the master.
+
 2.	Ensure Network Connectivity
+
 ●	Ensure the master and slave machines are on the same network or have appropriate access configurations (like VPN).
+
 3.	Modify jmeter.properties
+
 ●	 On the master machine, edit the jmeter.properties file (in the bin directory) and set the following:
+
  remote_hosts=192.168.1.74
 ●	If using multiple slaves, list them as a comma-separated value:
+
  remote_hosts=192.168.1.74,192.168.1.75
+
 4.	Run the Test
+
 ●	Execute the command you provided:
+
 jmeter -n -t D:\Jmxfiles\03_10_2024_Update\All\All.jmx -l C:\apache-jmeter-5.6.3\bin\1160APIs1MinRamp5Distribute.csv -R 192.168.1.74
+
 ●	The master sends the test plan to the slaves, executes it, and collects the results in the specified .csv file.
 
 Generating Reports After the Test :-
+
 Once the test completes, you can generate an HTML report for detailed analysis:- 
+
 jmeter -g C:\apache-jmeter-5.6.3\bin\1160APIs1MinRamp5Distribute.csv -o C:\apache-jmeter-5.6.3\bin\report_output
+
 ●	-g: Path to the results file (.csv file).
 
 Key Points for Distributed Testing :- 
