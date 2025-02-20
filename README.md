@@ -213,7 +213,7 @@ Each slave runs its own Java Virtual Machine (JVM). If the JVM on one or both sl
 If the slave machines are running into frequent GC pauses,
    they may take longer to process requests and report results back to the master.
 
-**Step5:-** 
+**Step 5:-** 
 
 How to Troubleshoot the Issue:-
 
@@ -347,6 +347,8 @@ Once the test completes, you can generate an HTML report for detailed analysis:-
 jmeter -g C:\apache-jmeter-5.6.3\bin\1160APIs1MinRamp5Distribute.csv -o C:\apache-jmeter-5.6.3\bin\report_output
 
 ●	-g: Path to the results file (.csv file).
+
+**Step 9 :-** 
 
 Key Points for Distributed Testing :- 
 
